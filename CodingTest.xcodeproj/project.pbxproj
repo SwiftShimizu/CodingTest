@@ -6,9 +6,42 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E66051722D8659C2007540A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66051712D8659C2007540A9 /* XCTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E66051892D865D7A007540A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E660514B2D86461C007540A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E66051522D86461C007540A9;
+			remoteInfo = CodingTest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E66051532D86461C007540A9 /* CodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E66051712D8659C2007540A9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E66051852D865D7A007540A9 /* CodingTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E660518F2D865D87007540A9 /* Exceptions for "UTCode" folder in "CodingTest" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Model/MacroNutrientsTests.swift,
+			);
+			target = E66051522D86461C007540A9 /* CodingTest */;
+		};
+		E66051902D865D87007540A9 /* Exceptions for "UTCode" folder in "CodingTestTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Model/MacroNutrientsTests.swift,
+			);
+			target = E66051842D865D7A007540A9 /* CodingTestTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E66051552D86461C007540A9 /* CodingTest */ = {
@@ -16,10 +49,27 @@
 			path = CodingTest;
 			sourceTree = "<group>";
 		};
+		E660516B2D865853007540A9 /* UTCode */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E660518F2D865D87007540A9 /* Exceptions for "UTCode" folder in "CodingTest" target */,
+				E66051902D865D87007540A9 /* Exceptions for "UTCode" folder in "CodingTestTests" target */,
+			);
+			path = UTCode;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E66051502D86461C007540A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66051722D8659C2007540A9 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E66051822D865D7A007540A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				E66051552D86461C007540A9 /* CodingTest */,
+				E660516B2D865853007540A9 /* UTCode */,
+				E66051702D8659C2007540A9 /* Frameworks */,
 				E66051542D86461C007540A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +93,17 @@
 			isa = PBXGroup;
 			children = (
 				E66051532D86461C007540A9 /* CodingTest.app */,
+				E66051852D865D7A007540A9 /* CodingTestTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E66051702D8659C2007540A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E66051712D8659C2007540A9 /* XCTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,6 +123,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				E66051552D86461C007540A9 /* CodingTest */,
+				E660516B2D865853007540A9 /* UTCode */,
 			);
 			name = CodingTest;
 			packageProductDependencies = (
@@ -69,6 +131,26 @@
 			productName = CodingTest;
 			productReference = E66051532D86461C007540A9 /* CodingTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E66051842D865D7A007540A9 /* CodingTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E660518B2D865D7A007540A9 /* Build configuration list for PBXNativeTarget "CodingTestTests" */;
+			buildPhases = (
+				E66051812D865D7A007540A9 /* Sources */,
+				E66051822D865D7A007540A9 /* Frameworks */,
+				E66051832D865D7A007540A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E660518A2D865D7A007540A9 /* PBXTargetDependency */,
+			);
+			name = CodingTestTests;
+			packageProductDependencies = (
+			);
+			productName = CodingTestTests;
+			productReference = E66051852D865D7A007540A9 /* CodingTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -82,6 +164,10 @@
 				TargetAttributes = {
 					E66051522D86461C007540A9 = {
 						CreatedOnToolsVersion = 16.0;
+					};
+					E66051842D865D7A007540A9 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = E66051522D86461C007540A9;
 					};
 				};
 			};
@@ -100,12 +186,20 @@
 			projectRoot = "";
 			targets = (
 				E66051522D86461C007540A9 /* CodingTest */,
+				E66051842D865D7A007540A9 /* CodingTestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E66051512D86461C007540A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E66051832D865D7A007540A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +216,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E66051812D865D7A007540A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E660518A2D865D7A007540A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E66051522D86461C007540A9 /* CodingTest */;
+			targetProxy = E66051892D865D7A007540A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E660515F2D86461D007540A9 /* Debug */ = {
@@ -300,6 +409,40 @@
 			};
 			name = Release;
 		};
+		E660518C2D865D7A007540A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BuildTest.CodingTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodingTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodingTest";
+			};
+			name = Debug;
+		};
+		E660518D2D865D7A007540A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BuildTest.CodingTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodingTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodingTest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +460,15 @@
 			buildConfigurations = (
 				E66051622D86461D007540A9 /* Debug */,
 				E66051632D86461D007540A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E660518B2D865D7A007540A9 /* Build configuration list for PBXNativeTarget "CodingTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E660518C2D865D7A007540A9 /* Debug */,
+				E660518D2D865D7A007540A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
